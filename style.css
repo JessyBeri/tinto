@@ -378,4 +378,127 @@ footer a {
     margin-right: 5%;
 }
 
+/* VERSION TABLETTE */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* Header, En-tête */
+
+    .headerImage {
+        width: 60%;
+        max-width: 80%;
+        border-radius: 10px;
+        position: relative;
+        top: 80px;
+    }
+
+    /* Section Restaurant */
+
+    .restaurantContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Section Menu */
+
+    .menuContent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2% 0;
+    }
+
+    .cards {
+        width: 25%;
+        margin: 0 20px;
+    }
+
+    .menuList button {
+        margin: 2% 0;
+    }
+    /* Section Témoignages */
+
+    .testimonialsTitle {
+        padding: 0;
+    }
+
+    .testimonialsContent {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 /* VERSION BUREAU */
+
+@media screen and (min-width: 1024px) {
+
+    /* Barre de Navigation */
+
+    .burger {
+        display: none;
+    }
+
+    /* Header, En-tête */
+
+    .headerContainer {
+        background-image: url('tinto.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        color: #fff;
+    }
+
+    .headerContainer h1 {
+        font-size: 7rem;
+    }
+    
+    .headerContainer h2 {
+        font-size: 3rem;
+    }
+
+    .headerImage {
+        display: none;
+        /* width: 60%;
+        max-width: 80%;
+        border-radius: 10px;
+        position: relative;
+        top: 80px; */
+    }
+
+    /* Section Restaurant */
+
+    .restaurantContent {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+
+    /* Section Menu */
+
+    .menuContent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2% 0;
+    }
+
+    .cards {
+        width: 25%;
+        margin: 0 20px;
+    }
+
+    .menuList button {
+        margin: 2% 0;
+    }
+    /* Section Témoignages */
+
+    .testimonialsTitle {
+        padding: 0;
+    }
+
+    .testimonialsContent {
+        display: flex;
+        flex-direction: row;
+    }
+
+}

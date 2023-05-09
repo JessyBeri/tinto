@@ -12,12 +12,32 @@
 
     <!-- barre de navigation -->
     <nav class="navbar">
+
+        <!-- l'overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Bouton "x" qui ferme le menu de l'overlay-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- le menu de l'overlay-->
+            <div class="overlay-content">
+                <a href="#">Le restaurant</a>
+                <a href="#">Le menu</a>
+                <a href="#">Témoignages</a>
+                <a href="#">Réservation</a>
+            </div>
+        </div>
+
         <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="navigation">
-            <i class="fa-solid fa-bars"></i>
+            <!-- Menu burger -->
+            <button onclick="openNav()" class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
         </div>
+
     </nav>
 
     <!-- En-tête -->
@@ -178,5 +198,17 @@
             <p>copyright, 2023</p>
         </div>
     </footer>
+
+    <script>
+        /* Ouvre le menu en cliquant sur le menu burger */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Ferme le menu en cliquant sur la croix "x" dans l'overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 </body>
 </html>

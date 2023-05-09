@@ -104,6 +104,7 @@ button {
     background-color: rgba(249, 249, 249, 0.95); /* Couleur avec opacité */
     overflow-x: hidden; /* Cache le scroll horizontal, et le menu lorsque l'overlay est caché */
     transition: 0.5s;
+    backdrop-filter: blur(3px);
   }
   
   /* Position du contenu dans l'overlay */
@@ -376,3 +377,6 @@ footer a {
 .footerLegal a {
     margin-right: 5%;
 }
+
+/* VERSION BUREAU */
+

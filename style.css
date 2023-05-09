@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+i {
+    font-size: 1.8rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+button {
+    margin: 4% 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.alignment {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    padding: 2%;
+}
+
+.cards {
+    background: #fff;
+    border-radius: 10px;
+    margin: 2% 0;
+    width: 70%;
+}
+
+/* Barre de navigation */
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px 30px;
+    background: #FFD15C;
+    min-width: 200px;
+}
+
+.search {
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.navigation {
+    cursor: pointer;
+}
+
+/* En-tête, header */
+
+.headerContainer {
+    background: #FFD15C;
+}
+
+.headerContainer h1 {
+    font-family: 'Allura', cursive;
+    font-weight: normal;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.headerImage {
+    width: 60%;
+    max-width: 350px;
+    border-radius: 10px;
+    position: relative;
+    top: 40px;
+}
+
+/* Section restaurant */
+
+.restaurant {
+    margin-top: 70px;
+}
+.restaurant img {
+    width: 85%;
+    max-width: 85%;
+    margin: 7% 0;
+}
+
+.restaurant p {
+    font-size: 1.2rem;
+}
+
+.restaurant button {
+    border-radius: 8px;
+    background: #fff;
+}
+
+.restaurant button i {
+    font-size: 1rem;
+}
+
+/* Section Menu */
+
+.menuTitle,
+.reservationTitle {
+    padding: 5%;
+    background: #825D00;
+    color: #fff;
+    width: 100vw;
+}
+
+.menuContent {
+    background: #FFD15C;
+    width: 100vw;
+    padding: 5% 0;
+}
+
+.cards img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menuDetails {
+    padding: 5%;
+}
+
+.menuDetails p:nth-of-type(1) {
+    font-weight: bold;
+    margin: 2% 0;
+}
+
+.menuDetails p:nth-of-type(2) {
+    font-size: 0.8rem;
+    color: #A6A6AA;
+}
+
+.menuList {
+    width: 100vw;
+    background: #FFD15C;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menuList button {
+    border-radius: 100px;
+    background: transparent;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    border: 2px solid black;
+}
+
+/* Section témoignages */
+
+.testimonials {
+    background-color: #ffd15c;
+    background-image: linear-gradient(180deg, #ffd15c 0%, #fff 90%);
+    min-width: 200px;
+}
+
+.testimonialsTitle {
+    padding: 5% 0 10%;
+}
+
+.firstPart {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonialsImage img {
+    border-radius: 50%;
+}
+
+.testimonialsIdentity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.testimonials .cards {
+    padding: 3%;
+}
+
+.secondPart {
+    margin-top: 3%;
+}
+
+/* Section réservation */
+
+.reservation img {
+    width: 100vw;
+    min-width: 200px;
+}
+
+form {
+    margin-bottom: 5%;
+}
+
+.reservationInput {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 5%;
+}
+
+.reservationInput label {
+    font-size: 0.8rem;
+    margin-bottom: 3%;
+}
+
+.reservationInput input {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #F1F1F1;
+    outline: none;
+    border: none;
+    padding: 15px;
+}
+
+/* Footer */
+
+footer {
+    padding: 4%;
+    min-width: 200px;
+    background: rgba(0, 0, 0, 0.63);
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerFirstPart,
+.footerSecondPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 3%;
+}
+
+.footerFirstPart a {
+    font-family: 'Allura', cursive;
+    font-size: 3rem;
+}
+
+.socialNetworks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+
+.socialNetworks a {
+    margin-left: 10px;
+}
+
+.horaireTitle {
+    margin-top: 10%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footerLegal {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    padding: 10% 3% 0;
+    font-size: 0.8rem;
+}
+
+.footerLegal a {
+    margin-right: 5%;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Tinto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- barre de navigation -->
+    <nav class="navbar">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="navigation">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="container headerContainer">
+        <h1>Le Tinto</h1>
+        <h2 class="alignment">Votre restaurant savoyard</h2>
+        <img src="tinto.jpg" alt="une image du restaurant" class="headerImage">
+    </header>
+
+    <main class="mainContainer">
+        <section class="container restaurant">
+            <h3 class="alignment">Notre restaurant</h3>
+            <img src="interieur_tinto.jpg" alt="une image de l'intérieur du restaurant">
+            <p class="alignment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit blanditiis, obcaecati dolores quasi aperiam est, aut repudiandae sapiente totam tenetur laudantium corrupti distinctio ea enim iusto explicabo mollitia hic ipsam.</p>
+            <button type="button">En savoir plus <i class="fa-sharp fa-solid fa-chevron-right"></i></button>
+        </section>
+
+        <section class="menu">
+            <div class="container menuTitle">
+                <h3 class="alignment">Venez vous régaler</h3>
+                <h4 class="alignment">Nos meilleures sélections</h4>
+            </div>
+            <div class="container menuContent">
+                <div class="cards">
+                    <div class="menuImage">
+                        <img src="crepe.jpg" alt="une image de crèpe au saumon">
+                    </div>
+                    <div class="menuDetails">
+                        <h5>Crèpe saumon Epinard</h5>
+                        <p>12 €</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, expedita veritatis excepturi eum provident eius enim veniam, pariatur neque possimus, cupiditate quas nam? Quaerat, molestiae aliquam nisi nulla sit incidunt?</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="menuImage">
+                        <img src="crepe.jpg" alt="une image de crèpe au saumon">
+                    </div>
+                    <div class="menuDetails">
+                        <h5>Crèpe saumon Epinard</h5>
+                        <p>12 €</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, expedita veritatis excepturi eum provident eius enim veniam, pariatur neque possimus, cupiditate quas nam? Quaerat, molestiae aliquam nisi nulla sit incidunt?</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="menuImage">
+                        <img src="crepe.jpg" alt="une image de crèpe au saumon">
+                    </div>
+                    <div class="menuDetails">
+                        <h5>Crèpe saumon Epinard</h5>
+                        <p>12 €</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, expedita veritatis excepturi eum provident eius enim veniam, pariatur neque possimus, cupiditate quas nam? Quaerat, molestiae aliquam nisi nulla sit incidunt?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container menuList">
+                <p>Notre liste de menu</p>
+                <button type="button">C'est par ici</button>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container testimonialsTitle">
+                <h3 class="alignment">Les gens le disent</h3>
+            </div>
+            <div class="container testimonialsContent">
+                <div class="cards">
+                    <div class="firstPart">
+                        <div class="testimonialsImage">
+                            <img src="image-jeanette.jpg" alt="une image de xxx">
+                        </div>
+                        <div class="testimonialsIdentity">
+                            <p>Name</p>
+                            <p>username</p>
+                        </div>
+                    </div>
+                    <div class="secondPart">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti. Obcaecati autem harum quidem veritatis mollitia eligendi. Error aut officiis aperiam, exercitationem dicta non amet eum iusto, unde, adipisci mollitia.</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="firstPart">
+                        <div class="testimonialsImage">
+                            <img src="image-jeanette.jpg" alt="une image de xxx">
+                        </div>
+                        <div class="testimonialsIdentity">
+                            <p>Name</p>
+                            <p>username</p>
+                        </div>
+                    </div>
+                    <div class="secondPart">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deleniti. Obcaecati autem harum quidem veritatis mollitia eligendi. Error aut officiis aperiam, exercitationem dicta non amet eum iusto, unde, adipisci mollitia.</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <section class="reservation">
+            <div class="container reservationTitle">
+                <h3 class="alignment">Envi d'un plat ?</h3>
+                <h4 class="alignment">Réservez</h4>
+            </div>
+            <img src="table.jpg" alt="une table">
+            <form class="container formulaire">
+                <div class="reservationInput">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                </div>
+                <div class="reservationInput">
+                    <label for="phone">Téléphone</label>
+                    <input type="number" id="phone" name="phone" placeholder="0692 00 00 00">
+                </div>
+                <div class="reservationInput">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="reservationInput">
+                    <label for="hour">Heure</label>
+                    <input type="text" id="hour" name="hour" placeholder="19h00">
+                </div>
+                <div class="reservationInput">
+                    <label for="personne">Personnes</label>
+                    <input type="number" id="personne" name="personne" placeholder="2">
+                </div>
+            </form>
+         </section>
+    </main>
+
+    <footer>
+        <div class="footerInfo">
+            <div class="footerFirstPart">
+                <a href="#">Le Tinto</a>
+                <p>11 bis, RN3, 23e km. 97418 La Plaine Des Cafres</p>
+                <p><i class="fa fa-phone-flip"></i> 02 62 59 13 03</p>
+            </div>
+            <div class="footerSecondPart">
+                <div class="socialNetworks">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="horaire">
+                    <p class="horaireTitle bold">Horaires</p>
+                    <p class="bold">Lundi - Mardi</p>
+                    <p>fermé</p>
+                    <p class="bold">Mercredi à dimanche</p>
+                    <p>11h00 - 14h00</p>
+                    <p>17h30 - 20h30</p>
+                </div>
+            </div>
+        </div>
+        <div class="footerLegal">
+            <a href="#">Mentions légales</a>
+            <p>copyright, 2023</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -139,7 +139,10 @@ button {
   
   /* Quand la hauteur de l'écran est inférieur à 450px, la taille des liens de navigation et du bouton fermé "x" est réduite */
   @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
+    .overlay a {
+        font-size: 20px
+    }
+    
     .overlay .closebtn {
       font-size: 40px;
       top: 15px;
@@ -311,10 +314,21 @@ form {
     padding: 15px;
 }
 
+.reservationBtn {
+    margin-top: 10%;
+}
+
+.reservationBtn .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    background: #FFD15C;
+}
+
 /* Footer */
 
 footer {
-    padding: 4%;
+    padding: 2%;
     min-width: 200px;
     background: rgba(0, 0, 0, 0.63);
     color: #fff;
@@ -370,7 +384,7 @@ footer a {
     display: flex;
     justify-content: end;
     text-align: center;
-    padding: 10% 3% 0;
+    padding: 3% 3% 0;
     font-size: 0.8rem;
 }
 
@@ -394,6 +408,10 @@ footer a {
 
     /* Section Restaurant */
 
+    .restaurant h3 {
+        margin-top: 5%;
+    }
+
     .restaurantContent {
         display: flex;
         flex-direction: column;
@@ -405,7 +423,6 @@ footer a {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 2% 0;
     }
 
     .cards {
@@ -416,15 +433,39 @@ footer a {
     .menuList button {
         margin: 2% 0;
     }
+
     /* Section Témoignages */
 
     .testimonialsTitle {
-        padding: 0;
+        padding: 5%;
     }
 
     .testimonialsContent {
         display: flex;
         flex-direction: row;
+        padding-bottom: 5%;
+    }
+
+    /* Section Réservation */
+
+    .reservationInfo {
+        display: flex;
+    }
+
+    .reservationInfo img {
+        flex-basis: 50%;
+        object-fit: cover;
+    }
+
+    .reservationInfo .formulaire {
+        flex-basis: 50%;
+    }
+
+    /* Bas de page, Footer */
+
+    .footerInfo {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
@@ -434,8 +475,39 @@ footer a {
 
     /* Barre de Navigation */
 
-    .burger {
+    .burger, 
+    .navigation {
         display: none;
+    }
+
+    .overlay {
+        position: relative;
+        width: 100%;
+        overflow-y: hidden;
+        background: transparent;
+        transition: none;
+    }
+
+    .overlay-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .overlay-content li {
+        list-style: none;
+    }
+
+    .overlay-content a {
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+
+    .overlay-content a:hover {
+        color: #fff;
+        background-color: #000;
     }
 
     /* Header, En-tête */
@@ -500,5 +572,37 @@ footer a {
         display: flex;
         flex-direction: row;
     }
+    
+    /* Section Réservation */
 
+    .reservation {
+        width: 100vw;
+        background: linear-gradient(180deg, rgba(130,93,0,1) 0%, rgba(130,93,0,1) 50%, rgb(250, 250, 250, 1) 50%, rgba(250,250,250,1) 100%);    }
+
+    .formulaire {
+        background: #fafafa;
+        height: 100%;
+    }
+
+    .reservationInfo {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .reservationInfo img {
+        flex-basis: 50%;
+        object-fit: cover;
+    }
+
+    .reservationInfo .formulaire {
+        flex-basis: 50%;
+    }
+
+    /* Bas de page, Footer */
+
+    .footerInfo {
+        display: flex;
+        justify-content: space-around;
+    }
 }

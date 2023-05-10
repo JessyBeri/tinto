@@ -18,17 +18,18 @@
             <!-- Bouton "x" qui ferme le menu de l'overlay-->
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <!-- le menu de l'overlay-->
-            <div class="overlay-content">
-                <a href="#">Le restaurant</a>
-                <a href="#">Le menu</a>
-                <a href="#">Témoignages</a>
-                <a href="#">Réservation</a>
-            </div>
+            <ul class="overlay-content">
+                <li><a href="#">Le restaurant</a></li>
+                <li><a href="#">Le menu</a></li>
+                <li><a href="#">Témoignages</a></li>
+                <li><a href="#">Réservation</a></li>
+            </ul>
         </div>
 
-        <div class="search">
+        <!-- <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        </div> -->
+
         <div class="navigation">
             <!-- Menu burger -->
             <button onclick="openNav()" class="burger">
@@ -147,29 +148,36 @@
                 <h3 class="alignment">Envi d'un plat ?</h3>
                 <h4 class="alignment">Réservez</h4>
             </div>
-            <img src="table.jpg" alt="une table">
-            <form class="container formulaire">
-                <div class="reservationInput">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" placeholder="Votre nom">
-                </div>
-                <div class="reservationInput">
-                    <label for="phone">Téléphone</label>
-                    <input type="number" id="phone" name="phone" placeholder="0692 00 00 00">
-                </div>
-                <div class="reservationInput">
-                    <label for="date">Date</label>
-                    <input type="date" id="date" name="date">
-                </div>
-                <div class="reservationInput">
-                    <label for="hour">Heure</label>
-                    <input type="text" id="hour" name="hour" placeholder="19h00">
-                </div>
-                <div class="reservationInput">
-                    <label for="personne">Personnes</label>
-                    <input type="number" id="personne" name="personne" placeholder="2">
-                </div>
-            </form>
+            <div class="reservationInfo">
+                <img src="table.jpg" alt="une table">
+                <form class="container formulaire">
+                    <div class="reservationInput">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                    </div>
+                    <div class="reservationInput">
+                        <label for="phone">Téléphone</label>
+                        <input type="number" id="phone" name="phone" placeholder="0692 00 00 00">
+                    </div>
+                    <div class="reservationInput">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="reservationInput">
+                        <label for="hour">Heure</label>
+                        <input type="text" id="hour" name="hour" placeholder="19h00">
+                    </div>
+                    <div class="reservationInput">
+                        <label for="personne">Personnes</label>
+                        <input type="number" id="personne" name="personne" placeholder="2">
+                    </div>
+                    <div class="reservationBtn">
+                        <input type="submit" id="btnId" name="btn" class="btn" value="Enregistrer">
+                    </div>
+                    
+                </form>
+            </div>
+            
          </section>
     </main>
 

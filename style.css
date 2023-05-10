@@ -125,10 +125,6 @@ button {
     display: block;
   }
   
-  .overlay a:hover, .overlay a:focus {
-    color: #FFD15C;
-  }
-  
   /* Position du bouton fermé "x" */
   .overlay .closebtn {
     position: absolute;
